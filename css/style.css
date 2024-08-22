@@ -1,0 +1,123 @@
+@import url('https://fonts.google.com/specimen/Outfit');
+@font-face {
+    font-family: myFont;
+    src: url("../fonts/Outfit-VariableFont_wght.ttf");
+}
+/*.attribution {*/
+/*    font-size: 11px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.attribution a {*/
+/*    color: hsl(228, 45%, 44%);*/
+/*}*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*body {*/
+/*    background-color: hsl(212, 45%, 89%);*/
+/*}*/
+
+/*body {*/
+/*    background-color: hsl(216, 15%, 48%);*/
+/*}*/
+
+/*body {*/
+/*    background-color: hsl(218, 44%, 22%);*/
+/*}*/
+body {
+    background-color: hsl(212, 45%, 89%);
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.card {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 1rem 1rem 1rem 2rem rgba(0, 0, 0, 0.05);
+}
+.card-img {
+    padding: 3vw;
+    width: 100%;
+    margin: auto;
+    border-radius: 30px;
+    height: auto;
+}
+.card-header {
+    text-align: center;
+    font-family: myFont;
+    padding:0 8vw 4vw 8vw;
+    color: hsl(218, 44%, 22%);
+}
+.card-paragraph{
+    font-family: myFont;
+    color: hsl(216, 15%, 48%);
+    text-align: center;
+    padding: 0  8vw 4vw 8vw;
+}
+@media screen and (min-width:375px) {
+    .card{
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .card{
+        width: 60vw;
+    }
+}
+@media screen and (min-width:650px) {
+    .card{
+        width: 50vw;
+    }
+}
+@media screen and (min-width:750px) {
+    .card{
+        width: 40vw;
+    }
+    .card-header{
+        padding: 2vw;
+    }
+    .card-paragraph{
+        padding: 2vw;
+    }
+}
+
+@media screen and (min-width:850px) {
+    .card{
+        width: 30vw;
+    }
+    .card-img{
+        border-radius: 40px;
+    }
+    .card-header{
+        padding: .8vw;
+    }
+    .card-paragraph{
+        padding: .8vw;
+    }
+}
+@media screen and (min-width:1100px) {
+    .card{
+        width: 25vw;
+    }
+    .card-img{
+        border-radius: 48px;
+    }
+    .card-header{
+        padding: .85vw;
+    }
+    .card-paragraph{
+        padding: .85vw;
+    }
+}
